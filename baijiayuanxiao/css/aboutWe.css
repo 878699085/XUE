@@ -1,0 +1,57 @@
+.aboutWe ul{
+	background: url(../imgs/about_1.png) no-repeat 25px center;
+	height: 188px;
+}
+.aboutWe ul li{
+	width: 383px;
+	height: 188px;
+	border:1px dashed #ccc;
+	float: left;
+	margin-right: 22px;
+	margin-top: 10px;
+}
+.aboutWe ul li.mrn{
+	margin-right: 0;
+}
+.aboutWe ul li h4{
+	margin: 63px 0 0 110px;
+	font-size: 24px;
+}
+.aboutWe ul li p{
+	margin: 26px 0 0 110px;
+	font-size: 14px;
+}
+
+.about-map{
+	border:1px dashed #ccc;
+	height: 420px;
+	margin: 23px auto 100px auto;
+}
+.about-map h4{
+	color: #5e5e5e;
+	font-size: 22px;
+	margin:32px 0 22px 28px;
+}
+#allmap{
+	margin-left:28px;
+	width:698px;
+	height:298px;
+}
+.fl{
+	float: left;
+}
+.about-connect{
+	margin-top: 76px;
+	padding: 95px 0 0 23px;
+	background: url(../imgs/about_2.png) no-repeat 24px 24px;
+	font-size: 14px;
+	line-height: 36px;
+}
+.about-connect dl{
+	width: 450px;
+}
+.about-connect dt{
+	float: left;
+}
+.about-connect dd{
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/aboutWe.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pz24BcGrNjNgKWB8tryiePFkEzmhbXH4"></script>
+	</head>
+	<body>
+		<div class="aboutWe clearfix wrap">
+			<p class="require_tittle">
+				所在位置:
+				<i><a href="">首页</a></i>
+				<i><a href="">>联系我们</a></i>
+			</p>
+			<ul>
+				<li>
+					<h4>客服服务热线</h4>
+					<p>010-63938831</p>
+				</li>
+				<li>
+					<h4>大专院校、科研院所</h4>
+					<p>王丽霞  13683112973	 010-83833750</p>
+				</li>
+				<li class="mrn">
+					<h4>地方科技局</h4>
+					<p>孙   鹏  18600260995	 010-63870624   </p>
+				</li>
+			</ul>
+		</div>
+		<div class="about-map wrap">
+			<div class="fl">
+				<h4>We are here</h4>
+				<div id="allmap"> </div>
+			</div>
+			<div class="fl about-connect" >
+				<p>北京恒冠知识产权服务平台</p>
+				<dl>
+					<dt>地址：</dt>
+					<dd>北京市丰台区汽车博物馆东路盈坤世纪大厦D座7层</dd>
+					<dt>联系电话 ：</dt>
+					<dd>010-63938831</dd>
+					<dt>传 &emsp;&emsp;真：</dt>
+					<dd>010-63870743</dd>
+					<dt>电子邮箱 ：</dt>
+					<dd>service@techhg.com</dd>
+				</dl>
+			</div>
+		</div>
+		<script type="text/javascript">
+	        // 百度地图API功能
+	        var map = new BMap.Map("allmap", {mapType:BMAP_SATELLITE_MAP});    // 创建Map实例
+	        map.centerAndZoom(new BMap.Point(116.310662, 39.833173), 11);  // 初始化地图,设置中心点坐标和地图级别
+	        map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	        var point = new BMap.Point(116.310662,39.833173);
+	        var marker = new BMap.Marker(point);  // 创建标注
+	        map.addOverlay(marker);              // 将标注添加到地图中
+	        map.centerAndZoom(point, 15);
+	        var opts = {
+	            width : 300,     // 信息窗口宽度
+	            height: 0,     // 信息窗口高度
+	            title : "<span style='font-size:14px;color: red;'>北京恒冠国际科技服务中心</span>" , // 信息窗口标题
+	            enableMessage:true,//设置允许信息窗发送短息
+	
+	        }
+	        var infoWindow = new BMap.InfoWindow("<span style='font-size:10px'>地址：北京市丰台区汽车博物馆东路盈坤世纪D座7层</span>", opts);  // 创建信息窗口对象
+	
+	            map.openInfoWindow(infoWindow,point); //开启信息窗口
+	
+	    </script>
+	</body>
+</html>
